@@ -1,0 +1,57 @@
+body{
+    background-color:rgb(70,70,70);
+}
+
+h1{
+    text-align: center;
+    border-bottom: solid 1px black;
+}
+
+
+.gunText{
+    font-size: 24px;
+    color: rgb(179, 179, 179);
+    transition: 0.5s;
+}
+.gunText:hover{
+    background: rgba(0, 0, 0, 0.4);
+    padding: 1%;
+    border-radius: 3px;
+    display:inline-block;
+}
+
+.m4Container{
+    position: absolute;
+    float:left;
+    width: 50%;
+}
+
+.imgContainer{
+    max-height: 100%;
+    max-width: 100%;
+
+    transition: 1s;
+
+}
+.imgContainer:hover{
+    padding: 10%;
+    background: rgba(179, 179, 179, 0.3);
+    margin-right: 2%;
+}
+
+.scarContainer{
+    float:right;
+    width: 50%;
+}
+
+.sprayImg{
+    height: 600px;
+    width: 550;
+}
+
+.gripText{
+    position: absolute;
+    font-size: 200%;
+    background-color: #FFFF00;
+    opacity: 0.4;
+}
