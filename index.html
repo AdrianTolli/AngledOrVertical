@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
         <title>Angled or Vertical</title>
         <link rel="stylesheet" type="text/css" href="index.css">
     </head>
     <body>
         <h1>Angled or Vertical, a PUBG site</h1>
-        <div class="m4Container">
-            <h2 class="gunText">M416</h2>
-            <div class="imgContainer">
-            <span class="gripText">Vertical</span>
-            <img src="images/m4_vertical.jpg" class="sprayImg"/> 
-            </div>
-            <div class="imgContainer">
+
+        <ul id=gunText>
+            <button class="m4Text">M416</button>
+            <button class="scarText">Scar</button>
+            <button class="sksText">SKS</button>
+            <button class="umpText">UMP</button>
+        </ul>
+
+        <div class="imgContainer">
+            <div class="angledImgDiv">
                 <span class="gripText">Angled</span>
-                <img src="images/m4_Angled.jpg" class="sprayImg"/>
+                <img class="angledImg" src=''/>
+            </div>
+
+            <div class="verticalImgDiv">
+                    <span class="gripText">Vertical</span>
+                    <img class="verticalImg" src=''/>
             </div>
         </div>
-        <div class="scarContainer">
-            <h2 class="gunText">Scar</h2>
-            <div class="imgContainer">
-                <span class="gripText">Vertical</span>
-                <img src="images/scar_vertical.jpg" class="sprayImg"/>
-            </div>
-            <div class="imgContainer">
-            <span class="gripText">Angled</span>
-            <img src="images/scar_Angled.jpg" class="sprayImg"/>
-            </div>         
-        </div>
+        
+        
+        <script src="./main.js"></script>
     </body>
 </html>
