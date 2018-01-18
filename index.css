@@ -7,33 +7,60 @@ h1{
     border-bottom: solid 1px black;
 }
 
-.highlighted{
-    background: rgba(170, 170, 170, 0.4);
-    padding: 1%;
-    border-radius: 3px;
-    display:inline-block;
+#aimSelector{
+    margin-left: 40%;
+    width: 20%;
+    outline: black solid 3px;
+    background: rgba(100, 100, 100, 0.4);
+    padding: 0.2%;
+    border-radius: 10%;
+    display: inline-block;
+    transition: 0.5s;
 }
-.gunTextContainer{
-    width: 100%;
-    margin-top: 5%;
-    
+
+.rmb{
+    margin-left: 10%;
+    outline: black solid thin;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
 }
+
+.ads{
+    margin-left: 10%;
+    outline: black solid thin;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
+
+
+.rmb:hover, .ads:hover{
+    background: rgba(209, 209, 209, 0.4);
+}
+
+.highlight{
+    background: rgba(209, 209, 209, 0.4);
+}
+
 
 .gunText{
     font-size: 24px;
     color: rgb(179, 179, 179);
+    background: rgba(170, 170, 170, 0.4);
+    padding: 0.15%;
+    border-radius: 10%;
     transition: 0.5s;
 }
 
 .gunText:hover{
-    background: rgba(170, 170, 170, 0.4);
-    padding: 0.5%;
-    border-radius: 3px;
+    background: rgba(209, 209, 209, 0.4);
+    padding: 0.2%;
+    border-radius: 10%;
     display:inline-block;
 }
 
 .m4Text{
     margin-right: 15%;
+    
 }
 .scarText{
     margin-right: 15%;
@@ -42,22 +69,29 @@ h1{
     margin-right: 15%;
 }
 
+.umpText{
+}
+
 .gripText{
     position: absolute;
     font-size: 200%;
     background-color: #FFFF00;
-    opacity: 0.4;
-}
-
-.umpText{
+    opacity: 0.6;
 }
 
 .imgContainer{
+    transition: 0.5s;
 }
 
 .angledImgDiv{
     float: left;
+    width: 50%;
 }
 .verticalImgDiv{
     float: right;
+    width: 50%;
+}
+
+.angledImg, .verticalImg{
+    width: 100%;
 }
