@@ -18,6 +18,12 @@ h1{
     transition: 0.5s;
 }
 
+.aimModeSelector{
+    margin-left: 27.5%;
+    font-size: 120%;
+    font-weight: bold;
+}
+
 .rmb{
     margin-left: 10%;
     outline: black solid thin;
@@ -35,6 +41,7 @@ h1{
 
 .rmb:hover, .ads:hover{
     background: rgba(209, 209, 209, 0.4);
+    cursor: pointer;
 }
 
 .highlight{
@@ -45,17 +52,14 @@ h1{
 .gunText{
     font-size: 24px;
     color: rgb(179, 179, 179);
-    background: rgba(170, 170, 170, 0.4);
+    background: rgba(0, 0, 0, 0.4);
     padding: 0.15%;
     border-radius: 10%;
-    transition: 0.5s;
 }
 
 .gunText:hover{
     background: rgba(209, 209, 209, 0.4);
-    padding: 0.2%;
-    border-radius: 10%;
-    display:inline-block;
+    cursor: pointer;
 }
 
 .m4Text{
@@ -70,6 +74,11 @@ h1{
 }
 
 .umpText{
+    margin-right: 15%;
+}
+
+.vectorText{
+
 }
 
 .gripText{
@@ -94,4 +103,18 @@ h1{
 
 .angledImg, .verticalImg{
     width: 100%;
+}
+
+.info{
+    margin-top: 5%;
+    margin-left: 35%;
+    width: 30%;
+    outline: rgb(0, 0, 0) solid 3px;
+    background: rgba(209, 209, 209, 0.4);
+    padding: 0.2%;
+    border-radius: 10%;
+    display: inline-block;
+}
+.infoText{
+    
 }
