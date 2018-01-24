@@ -1,4 +1,40 @@
+function preloadImages(){
+    new Promise((resolve, reject) => {
+        var images = new Array()
+
+        preload(
+            "https://angledorvertical.herokuapp.com/images/m4_angled_rmb.png",
+            "https://angledorvertical.herokuapp.com/images/m4_vertical_rmb.png",
+            "https://angledorvertical.herokuapp.com/images/m4_angled_ads.png",
+            "https://angledorvertical.herokuapp.com/images/m4_vertical_ads.png",
+            "https://angledorvertical.herokuapp.com/images/scar_angled_rmb.png",
+            "https://angledorvertical.herokuapp.com/images/scar_vertical_rmb.png",
+            "https://angledorvertical.herokuapp.com/images/scar_angled_ads.png",
+            "https://angledorvertical.herokuapp.com/images/scar_vertical_ads.png",
+            "https://angledorvertical.herokuapp.com/images/sks_angled_rmb.png",
+            "https://angledorvertical.herokuapp.com/images/sks_vertical_rmb.png",
+            "https://angledorvertical.herokuapp.com/images/sks_angled_ads.png",
+            "https://angledorvertical.herokuapp.com/images/sks_vertical_ads.png",
+            "https://angledorvertical.herokuapp.com/images/ump_angled_rmb.png",
+            "https://angledorvertical.herokuapp.com/images/ump_vertical_rmb.png",
+            "https://angledorvertical.herokuapp.com/images/ump_angled_ads.png",
+            "https://angledorvertical.herokuapp.com/images/ump_vertical_ads.png",
+            "https://angledorvertical.herokuapp.com/images/vector_vertical_rmb.png",
+            "https://angledorvertical.herokuapp.com/images/vector_vertical_ads.png"
+        )
+
+        for(i=0; i<preload.arguments.length; i++){
+            images[i] = new Image()
+            images[i].src = preload.arguments[i]
+        }
+        resolve();
+        });
+}
+
+
 $(document).ready(function(){
+
+    preloadImages();
 
     $('#aimSelector').on('click', '.nkd', function(){
         $('.highlight').removeClass('highlight');
@@ -32,6 +68,10 @@ $(document).ready(function(){
     $('#gunText').on('click', '.m4Text', function() {
         $('.angledImg').attr('src', './images/m4_angled_'+aimMode+'.png');
         $('.verticalImg').attr('src', './images/m4_vertical_'+aimMode+'.png');
+
+        $('.selected').removeClass('selected');
+        $('.m4Text').addClass('selected');
+
         $('.info').text("You've chosen M416! No additional information about this weapon. Other attachments will be an option soon!");
         selectedGun="m4";
     });
@@ -40,6 +80,10 @@ $(document).ready(function(){
         $('.angledImg').attr('src', './images/scar_angled_'+aimMode+'.png');
         $('.verticalImg').attr('src', './images/scar_vertical_'+aimMode+'.png');
         $('.info').text("You've chosen Scar! No additional information about this weapon. Other attachments will be an option soon");
+        
+        $('.selected').removeClass('selected');
+        $('.scarText').addClass('selected');
+
         selectedGun="scar";
     });
 
@@ -47,6 +91,10 @@ $(document).ready(function(){
         $('.angledImg').attr('src', './images/sks_angled_'+aimMode+'.png');
         $('.verticalImg').attr('src', './images/sks_vertical_'+aimMode+'.png');
         $('.info').text("You've chosen SKS! Since this is not an autofire weapon, this is just spamclick. Aim Down Sight pictures will be added shortly!");
+        
+        $('.selected').removeClass('selected');
+        $('.sksText').addClass('selected');
+
         selectedGun="sks";
     });
 
@@ -54,6 +102,10 @@ $(document).ready(function(){
         $('.angledImg').attr('src', './images/ump_angled_'+aimMode+'.png');
         $('.verticalImg').attr('src', './images/ump_vertical_'+aimMode+'.png');
         $('.info').text("You've chosen UMP! No additional information about this weapon. Other attachments will be an option soon");
+        
+        $('.selected').removeClass('selected');
+        $('.umpText').addClass('selected');
+        
         selectedGun="ump";
     });
 
@@ -61,6 +113,10 @@ $(document).ready(function(){
         $('.angledImg').attr('src', './images/vector_angled_'+aimMode+'.png');
         $('.verticalImg').attr('src', './images/vector_vertical_'+aimMode+'.png');
         $('.info').text("You've chosen Vector! This weapon cannot equip angled grip. Other attachments will be an option soon");
+        
+        $('.selected').removeClass('selected');
+        $('.vectorText').addClass('selected');
+
         selectedGun="vector";
     });
 
