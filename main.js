@@ -65,57 +65,57 @@ $(document).ready(function(){
         $('.info').text("You've chosen Aim Down Sight, now click on desired gun");
     });
 
-    $('#gunText').on('click', '.m4Text', function() {
+    $('#gunText').on('click', '.m4Icon', function() {
         $('.angledImg').attr('src', './images/m4_angled_'+aimMode+'.png');
         $('.verticalImg').attr('src', './images/m4_vertical_'+aimMode+'.png');
 
         $('.selected').removeClass('selected');
-        $('.m4Text').addClass('selected');
+        $('.m4Icon').addClass('selected');
 
         $('.info').text("You've chosen M416! No additional information about this weapon. Other attachments will be an option soon!");
         selectedGun="m4";
     });
 
-    $('#gunText').on('click', '.scarText', function() {
+    $('#gunText').on('click', '.scarIcon', function() {
         $('.angledImg').attr('src', './images/scar_angled_'+aimMode+'.png');
         $('.verticalImg').attr('src', './images/scar_vertical_'+aimMode+'.png');
         $('.info').text("You've chosen Scar! No additional information about this weapon. Other attachments will be an option soon");
         
         $('.selected').removeClass('selected');
-        $('.scarText').addClass('selected');
+        $('.scarIcon').addClass('selected');
 
         selectedGun="scar";
     });
 
-    $('#gunText').on('click', '.sksText', function() {
+    $('#gunText').on('click', '.sksIcon', function() {
         $('.angledImg').attr('src', './images/sks_angled_'+aimMode+'.png');
         $('.verticalImg').attr('src', './images/sks_vertical_'+aimMode+'.png');
         $('.info').text("You've chosen SKS! Since this is not an autofire weapon, this is just spamclick. Aim Down Sight pictures will be added shortly!");
         
         $('.selected').removeClass('selected');
-        $('.sksText').addClass('selected');
+        $('.sksIcon').addClass('selected');
 
         selectedGun="sks";
     });
 
-    $('#gunText').on('click', '.umpText', function() {
+    $('#gunText').on('click', '.umpIcon', function() {
         $('.angledImg').attr('src', './images/ump_angled_'+aimMode+'.png');
         $('.verticalImg').attr('src', './images/ump_vertical_'+aimMode+'.png');
         $('.info').text("You've chosen UMP! No additional information about this weapon. Other attachments will be an option soon");
         
         $('.selected').removeClass('selected');
-        $('.umpText').addClass('selected');
+        $('.umpIcon').addClass('selected');
         
         selectedGun="ump";
     });
 
-    $('#gunText').on('click', '.vectorText', function() {
+    $('#gunText').on('click', '.vectorIcon', function() {
         $('.angledImg').attr('src', './images/vector_angled_'+aimMode+'.png');
         $('.verticalImg').attr('src', './images/vector_vertical_'+aimMode+'.png');
         $('.info').text("You've chosen Vector! This weapon cannot equip angled grip. Other attachments will be an option soon");
         
         $('.selected').removeClass('selected');
-        $('.vectorText').addClass('selected');
+        $('.vectorIcon').addClass('selected');
 
         selectedGun="vector";
     });
